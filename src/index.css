@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
-[data-js='root'] {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inconsolata', serif;
 }
 
 :root {
@@ -23,5 +23,33 @@
 body {
   background-image: url(/background-desktop.png);
   color: var(--neutral0);
+  font-size: 20px;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin: 0.5rem;
+}
+
+input {
   font-family: 'Inconsolata', serif;
+  padding: 0.5rem;
+}
+
+button {
+  background-color: var(--orange500);
+  border: none;
+  border-radius: 15px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+footer {
+  margin-top: 1rem;
 }

@@ -1,10 +1,27 @@
-[data-js="root"] {
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+[data-js='root'] {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-h1{
-  color: #006eff;
+:root {
+  --neutral0: hsl(0, 0%, 100%);
+  --neutral300: hsl(252, 6%, 83%);
+  --neutral500: hsl(245, 15%, 58%);
+  --neutral700: hsl(245, 19%, 35%);
+  --neutral900: hsl(248, 70%, 10%);
+
+  --orange500: hsl(7, 88%, 67%);
+  --orange700: hsl(7, 71%, 60%);
+
+  --gradient: hsl(7, 86%, 67%) to hsl(0, 0%, 100%);
+}
+
+body {
+  background-image: url(/background-desktop.png);
+  color: var(--neutral0);
+  font-family: 'Inconsolata', serif;
 }
